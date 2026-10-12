@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TechNews USFX - Portal de noticias tecnológicas para estudiantes de la Universidad San Francisco Xavier de Chuquisaca. Proyecto de SIS256 Desarrollo Web.">
+  <title>TechNews USFX | Portal de Noticias Tecnológicas</title>
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome para Iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Hoja de Estilos -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========================================================
+       1. ENCABEZADO Y MENÚ DE NAVEGACIÓN (HEADER & NAVBAR)
+       ======================================================== -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <!-- Logo de TechNews USFX -->
+      <a href="#inicio" class="logo">
+        <div class="logo-icon">
+          <i class="fa-solid fa-bolt"></i>
+        </div>
+        <span class="logo-text">TechNews <span class="logo-badge">USFX</span></span>
+      </a>
+
+      <!-- Navegación Principal -->
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#inicio" class="nav-link active">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#noticias" class="nav-link">Noticias</a>
+          </li>
+          <li class="nav-item">
+            <a href="#tecnologia" class="nav-link">Tecnología</a>
+          </li>
+          <li class="nav-item">
+            <a href="#acerca" class="nav-link">Acerca de</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contacto" class="nav-link">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Botones de Acción (Modo Oscuro & Hamburguesa) -->
+      <div class="nav-actions">
+        <button id="theme-toggle" class="icon-btn" aria-label="Cambiar tema">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+
+        <!-- Botón Hamburguesa para Móviles -->
+        <button class="hamburger-btn" id="hamburger-btn" aria-label="Abrir menú" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================
+       2. SECCIÓN PRINCIPAL (HERO SECTION)
+       ======================================================== -->
+  <section class="hero" id="inicio">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <!-- Distintivo académico -->
+        <div class="hero-badge">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <span>SIS256 - Desarrollo Web | USFX</span>
+        </div>
+
+        <h1 class="hero-title">
+          Mantente informado sobre el 
+          <span class="gradient-text">mundo de la tecnología</span>
+        </h1>
+
+        <p class="hero-description">
+          El portal digital de vanguardia creado especialmente para la comunidad universitaria de la 
+          <strong>Universidad San Francisco Xavier de Chuquisaca</strong>. Descubre innovaciones en 
+          inteligencia artificial, desarrollo de software, ciberseguridad y el ecosistema tecnológico global.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#noticias" class="btn btn-primary">
+            <i class="fa-solid fa-newspaper"></i> Ver noticias
+          </a>
+          <a href="#acerca" class="btn btn-secondary">
+            <i class="fa-solid fa-circle-info"></i> Conocer el proyecto
+          </a>
+        </div>
+
+        <!-- Indicadores / Estadísticas rápidas -->
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number">+100%</span>
+            <span class="stat-label">Contenido Actualizado</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">USFX</span>
+            <span class="stat-label">Comunidad Estudiantil</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">24/7</span>
+            <span class="stat-label">Acceso Libre</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta Ilustrativa de Presentación -->
+      <div class="hero-visual">
+        <div class="visual-card">
+          <div class="visual-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="terminal-title">technews-usfx://feed-en-vivo</span>
+          </div>
+          <div class="visual-body">
+            <div class="news-preview-pill">
+              <i class="fa-solid fa-fire"></i> Tendencia de la semana
+            </div>
+            <h3>Inteligencia Artificial y su impacto en la educación universitaria</h3>
+            <p>
+              Nuevas herramientas y modelos transforman el aprendizaje y el desarrollo de software en las aulas universitarias.
+            </p>
+            <div class="visual-tags">
+              <span class="tag">#InteligenciaArtificial</span>
+              <span class="tag">#USFX</span>
+              <span class="tag">#DesarrolloWeb</span>
+            </div>
+            <div class="visual-footer">
+              <div class="author-mini">
+                <i class="fa-solid fa-user-graduate"></i>
+                <span>Edemir Mayta Baltazar</span>
+              </div>
+              <span class="date-mini"><i class="fa-regular fa-clock"></i> Hoy</span>
+            </div>
+          </div>
+        </div>
+        <!-- Elemento de fondo decorativo -->
+        <div class="hero-glow"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       3. SECCIÓN DE NOTICIAS DESTACADAS (NEWS SECTION)
+       ======================================================== -->
+  <section class="section news-section" id="noticias">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">ACTUALIDAD & TENDENCIAS</span>
+        <h2 class="section-title">Noticias Tecnológicas Destacadas</h2>
+        <p class="section-subtitle">
+          Explora los acontecimientos más relevantes del sector tecnológico, curados para complementar tu aprendizaje universitario.
+        </p>
+      </div>
+
+      <!-- Filtros interactivos de categorías -->
+      <div class="news-filters">
+        <button class="filter-btn active" data-category="todas">Todas</button>
+        <button class="filter-btn" data-category="ia">Inteligencia Artificial</button>
+        <button class="filter-btn" data-category="desarrollo">Desarrollo Web</button>
+        <button class="filter-btn" data-category="seguridad">Ciberseguridad</button>
+        <button class="filter-btn" data-category="hardware">Hardware & Innovación</button>
+      </div>
+
+      <!-- Cuadrícula de Noticias (Grid) -->
+      <div class="news-grid" id="news-grid">
+
+        <!-- Noticia 1: IA -->
+        <article class="news-card" data-category="ia">
+          <div class="card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=700&q=80" alt="Inteligencia Artificial Generativa" loading="lazy">
+            <span class="category-badge badge-ia"><i class="fa-solid fa-brain"></i> IA</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span><i class="fa-regular fa-calendar"></i> 12 Octubre, 2026</span>
+              <span><i class="fa-regular fa-clock"></i> 4 min lectura</span>
+            </div>
+            <h3 class="card-title">La evolución de los modelos de IA generativa y su rol en la programación</h3>
+            <p class="card-excerpt">
+              Los nuevos asistentes de código basados en modelos profundos aceleran el desarrollo de software y plantean nuevos retos para los estudiantes universitarios.
+            </p>
+            <div class="card-footer">
+              <button class="read-more-btn" data-id="1">
+                Leer noticia <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Noticia 2: Desarrollo Web -->
+        <article class="news-card" data-category="desarrollo">
+          <div class="card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=700&q=80" alt="Código y Desarrollo Web" loading="lazy">
+            <span class="category-badge badge-dev"><i class="fa-solid fa-code"></i> Desarrollo</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span><i class="fa-regular fa-calendar"></i> 10 Octubre, 2026</span>
+              <span><i class="fa-regular fa-clock"></i> 5 min lectura</span>
+            </div>
+            <h3 class="card-title">Fundamentos sólidos: La importancia de dominar HTML, CSS y JS Vanilla</h3>
+            <p class="card-excerpt">
+              Aprender las bases sin depender ciegamente de frameworks permite comprender la arquitectura de la web moderna y optimizar el rendimiento.
+            </p>
+            <div class="card-footer">
+              <button class="read-more-btn" data-id="2">
+                Leer noticia <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Noticia 3: Ciberseguridad -->
+        <article class="news-card" data-category="seguridad">
+          <div class="card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=700&q=80" alt="Ciberseguridad y Redes" loading="lazy">
+            <span class="category-badge badge-sec"><i class="fa-solid fa-shield-halved"></i> Seguridad</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span><i class="fa-regular fa-calendar"></i> 08 Octubre, 2026</span>
+              <span><i class="fa-regular fa-clock"></i> 3 min lectura</span>
+            </div>
+            <h3 class="card-title">Ciberseguridad en redes universitarias: Amenazas emergentes y defensa</h3>
+            <p class="card-excerpt">
+              Especialistas alertan sobre la necesidad de adoptar autenticación multifactor y buenas prácticas de protección de datos en entornos académicos.
+            </p>
+            <div class="card-footer">
+              <button class="read-more-btn" data-id="3">
+                Leer noticia <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Noticia 4: Hardware -->
+        <article class="news-card" data-category="hardware">
+          <div class="card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=700&q=80" alt="Microprocesadores y Hardware" loading="lazy">
+            <span class="category-badge badge-hw"><i class="fa-solid fa-microchip"></i> Hardware</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span><i class="fa-regular fa-calendar"></i> 05 Octubre, 2026</span>
+              <span><i class="fa-regular fa-clock"></i> 6 min lectura</span>
+            </div>
+            <h3 class="card-title">Nuevas arquitecturas de procesadores con aceleración de IA dedicada</h3>
+            <p class="card-excerpt">
+              Los nuevos chips integran NPUs optimizadas para ejecutar modelos neuronales en dispositivos portátiles sin depender constantemente de la nube.
+            </p>
+            <div class="card-footer">
+              <button class="read-more-btn" data-id="4">
+                Leer noticia <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Noticia 5: Desarrollo Web -->
+        <article class="news-card" data-category="desarrollo">
+          <div class="card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=700&q=80" alt="Diseño Web Responsive" loading="lazy">
+            <span class="category-badge badge-dev"><i class="fa-solid fa-mobile-screen"></i> Responsive</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span><i class="fa-regular fa-calendar"></i> 03 Octubre, 2026</span>
+              <span><i class="fa-regular fa-clock"></i> 4 min lectura</span>
+            </div>
+            <h3 class="card-title">Diseño Responsive y Accesibilidad Web: Estándares que todo futuro ingeniero debe dominar</h3>
+            <p class="card-excerpt">
+              Garantizar que las aplicaciones web se visualicen y manejen con fluidez en pantallas móviles y de escritorio es el pilar de la experiencia de usuario moderna.
+            </p>
+            <div class="card-footer">
+              <button class="read-more-btn" data-id="5">
+                Leer noticia <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Noticia 6: IA -->
+        <article class="news-card" data-category="ia">
+          <div class="card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=700&q=80" alt="Robótica e IA" loading="lazy">
+            <span class="category-badge badge-ia"><i class="fa-solid fa-robot"></i> Robótica</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span><i class="fa-regular fa-calendar"></i> 01 Octubre, 2026</span>
+              <span><i class="fa-regular fa-clock"></i> 5 min lectura</span>
+            </div>
+            <h3 class="card-title">Robótica autónoma e investigación en universidades latinoamericanas</h3>
+            <p class="card-excerpt">
+              Proyectos de investigación destacan el potencial de los estudiantes universitarios para construir soluciones de automatización orientadas a problemas reales.
+            </p>
+            <div class="card-footer">
+              <button class="read-more-btn" data-id="6">
+                Leer noticia <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       4. SECCIÓN TECNOLOGÍA / CARACTERÍSTICAS (FEATURES)
+       ======================================================== -->
+  <section class="section tech-features-section" id="tecnologia">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">CARACTERÍSTICAS DEL PORTAL</span>
+        <h2 class="section-title">¿Qué ofrece TechNews USFX?</h2>
+        <p class="section-subtitle">
+          Diseñado para enriquecer la vida académica y tecnológica de los estudiantes de la Universidad San Francisco Xavier.
+        </p>
+      </div>
+
+      <div class="features-grid">
+        <!-- Feature 1 -->
+        <div class="feature-card">
+          <div class="feature-icon icon-blue">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <h3 class="feature-title">Enfoque Académico</h3>
+          <p class="feature-description">
+            Información seleccionada y adaptada para enriquecer las materias de sistemas, informática y desarrollo de software de la USFX.
+          </p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-card">
+          <div class="feature-icon icon-purple">
+            <i class="fa-solid fa-laptop-code"></i>
+          </div>
+          <h3 class="feature-title">100% Código Limpio</h3>
+          <p class="feature-description">
+            Construido con buenas prácticas de desarrollo web estándar: HTML5 semántico, CSS3 moderno y JavaScript vanilla optimizado.
+          </p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-card">
+          <div class="feature-icon icon-green">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+          </div>
+          <h3 class="feature-title">Experiencia Responsive</h3>
+          <p class="feature-description">
+            Adaptabilidad total garantizada para teléfonos móviles, tablets y ordenadores con transiciones suaves y carga veloz.
+          </p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="feature-card">
+          <div class="feature-icon icon-orange">
+            <i class="fa-solid fa-lightbulb"></i>
+          </div>
+          <h3 class="feature-title">Fomento a la Innovación</h3>
+          <p class="feature-description">
+            Inspiramos a los estudiantes a emprender, investigar y crear soluciones tecnológicas que aporten a la comunidad y a Bolivia.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       5. SECCIÓN ACERCA DE (ABOUT SECTION & ESTUDIANTE)
+       ======================================================== -->
+  <section class="section about-section" id="acerca">
+    <div class="container">
+      <div class="about-grid">
+        <!-- Columna Izquierda: Información del Proyecto -->
+        <div class="about-info">
+          <span class="section-tag">SOBRE EL PROYECTO</span>
+          <h2 class="section-title">Un puente entre la academia y el futuro digital</h2>
+          
+          <p class="about-text">
+            <strong>TechNews USFX</strong> nace como una iniciativa dentro de la asignatura 
+            <strong>SIS256 - Desarrollo Web</strong> de la <strong>Universidad San Francisco Xavier de Chuquisaca</strong>. 
+            El objetivo primordial es dotar a los estudiantes de un espacio donde las novedades de la industria tecnológica 
+            sean accesibles, comprensibles e inspiradoras.
+          </p>
+
+          <p class="about-text">
+            Este proyecto demuestra la implementación práctica de estándares contemporáneos de maquetación web, 
+            diseño responsivo, manipulación del DOM y arquitectura de interfaz de usuario sin requerir librerías pesadas.
+          </p>
+
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Maquetación semántica y accesible para navegadores modernos.</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Modularidad en CSS mediante variables y diseño en cuadrícula (CSS Grid).</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Interacción dinámica, filtros y validaciones con JavaScript puro.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Columna Derecha: Ficha del Estudiante / Autor -->
+        <div class="about-card-wrapper">
+          <div class="student-card">
+            <div class="student-card-header">
+              <div class="student-avatar">
+                <i class="fa-solid fa-user-astronaut"></i>
+              </div>
+              <div class="student-title-block">
+                <h3 class="student-name">Edemir Mayta Baltazar</h3>
+                <span class="student-role">Desarrollador del Proyecto</span>
+              </div>
+            </div>
+
+            <div class="student-details">
+              <div class="detail-row">
+                <span class="detail-label"><i class="fa-solid fa-book"></i> Materia:</span>
+                <span class="detail-value">SIS256 - Desarrollo Web</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-label"><i class="fa-solid fa-building-columns"></i> Universidad:</span>
+                <span class="detail-value">Univ. San Francisco Xavier de Chuquisaca</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-label"><i class="fa-solid fa-location-dot"></i> Ciudad:</span>
+                <span class="detail-value">Sucre, Bolivia</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-label"><i class="fa-solid fa-layer-group"></i> Stack:</span>
+                <span class="detail-value">HTML5 · CSS3 · JavaScript ES6</span>
+              </div>
+            </div>
+
+            <div class="student-footer">
+              <span class="status-badge">
+                <span class="status-dot"></span> Proyecto Académico Activo
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       6. SECCIÓN DE CONTACTO (CONTACT SECTION)
+       ======================================================== -->
+  <section class="section contact-section" id="contacto">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">COMUNÍCATE</span>
+        <h2 class="section-title">Contáctanos o Envía tus Sugerencias</h2>
+        <p class="section-subtitle">
+          ¿Tienes una noticia tecnológica que compartir o sugerencias para mejorar el portal? Déjanos un mensaje.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Info de contacto universitario -->
+        <div class="contact-info-cards">
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fa-solid fa-university"></i>
+            </div>
+            <div>
+              <h4>Institución Académica</h4>
+              <p>Universidad San Francisco Xavier de Chuquisaca</p>
+              <small>Facultad de Tecnología - Sucre, Bolivia</small>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fa-solid fa-code-branch"></i>
+            </div>
+            <div>
+              <h4>Asignatura</h4>
+              <p>SIS256 - Desarrollo Web</p>
+              <small>Docencia y Laboratorios de Informática</small>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fa-solid fa-user-check"></i>
+            </div>
+            <div>
+              <h4>Responsable</h4>
+              <p>Edemir Mayta Baltazar</p>
+              <small>Estudiante / Desarrollador Frontend</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulario de contacto -->
+        <div class="contact-form-wrapper">
+          <form id="contact-form" class="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Nombre completo</label>
+              <div class="input-icon-wrapper">
+                <i class="fa-regular fa-user"></i>
+                <input type="text" id="name" name="name" placeholder="Ej. Juan Pérez" required>
+              </div>
+              <span class="error-msg" id="name-error"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Correo electrónico universitario o personal</label>
+              <div class="input-icon-wrapper">
+                <i class="fa-regular fa-envelope"></i>
+                <input type="email" id="email" name="email" placeholder="estudiante@usfx.bo" required>
+              </div>
+              <span class="error-msg" id="email-error"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Tema o asunto</label>
+              <div class="input-icon-wrapper">
+                <i class="fa-solid fa-tag"></i>
+                <input type="text" id="subject" name="subject" placeholder="Ej. Sugerencia de noticia sobre IA" required>
+              </div>
+              <span class="error-msg" id="subject-error"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Mensaje</label>
+              <div class="input-icon-wrapper textarea-wrapper">
+                <i class="fa-regular fa-comment-dots"></i>
+                <textarea id="message" name="message" rows="4" placeholder="Escribe tu mensaje o aporte aquí..." required></textarea>
+              </div>
+              <span class="error-msg" id="message-error"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block" id="submit-btn">
+              <i class="fa-solid fa-paper-plane"></i> Enviar Mensaje
+            </button>
+          </form>
+
+          <!-- Mensaje de éxito tras envío -->
+          <div class="form-feedback" id="form-feedback">
+            <i class="fa-solid fa-circle-check"></i>
+            <h4>¡Mensaje enviado con éxito!</h4>
+            <p>Gracias por tu aporte a TechNews USFX. Te responderemos a la brevedad.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       7. PIE DE PÁGINA (FOOTER)
+       ======================================================== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#inicio" class="logo">
+            <div class="logo-icon">
+              <i class="fa-solid fa-bolt"></i>
+            </div>
+            <span class="logo-text">TechNews <span class="logo-badge">USFX</span></span>
+          </a>
+          <p class="footer-text">
+            Portal de noticias tecnológicas para universitarios. Desarrollado como proyecto para la asignatura 
+            <strong>SIS256 - Desarrollo Web</strong>.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Navegación Rápida</h4>
+          <ul>
+            <li><a href="#inicio"><i class="fa-solid fa-chevron-right"></i> Inicio</a></li>
+            <li><a href="#noticias"><i class="fa-solid fa-chevron-right"></i> Noticias</a></li>
+            <li><a href="#tecnologia"><i class="fa-solid fa-chevron-right"></i> Tecnología</a></li>
+            <li><a href="#acerca"><i class="fa-solid fa-chevron-right"></i> Acerca del Proyecto</a></li>
+            <li><a href="#contacto"><i class="fa-solid fa-chevron-right"></i> Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-credits">
+          <h4>Datos Académicos</h4>
+          <p><strong>Estudiante:</strong> Edemir Mayta Baltazar</p>
+          <p><strong>Materia:</strong> SIS256 - Desarrollo Web</p>
+          <p><strong>Universidad:</strong> Universidad San Francisco Xavier de Chuquisaca</p>
+          <p><strong>Lugar:</strong> Sucre - Bolivia</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; 2026 <strong>TechNews USFX</strong> — Proyecto desarrollado por <strong>Edemir Mayta Baltazar</strong>.
+        </p>
+        <p class="footer-subtext">
+          Construido con HTML5 semántico, CSS3 moderno y JavaScript vanilla.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================
+       MODAL DE LECTURA DE NOTICIA (POPUP INTERACTIVO)
+       ======================================================== -->
+  <div class="modal-overlay" id="news-modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-container">
+      <button class="modal-close" id="modal-close-btn" aria-label="Cerrar ventana">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="modal-content" id="modal-content">
+        <!-- Contenido inyectado dinámicamente con JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Botón de retorno al inicio (Back to top) -->
+  <button id="back-to-top" class="back-to-top" aria-label="Volver arriba">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Script JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
